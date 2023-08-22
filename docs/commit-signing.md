@@ -1,4 +1,4 @@
-# Commit Signing
+# Commit Signing 
 
 This repository requires commit signing. This document outlines how to get commit signing setup for this repo.
 
@@ -16,7 +16,7 @@ Then you can use the `gpg` tool to generate a keypair:
 gpg --default-new-key-algo rsa4096 --quick-generate-key --batch --passphrase "" "Firstname Lastname <youremail@provider.com>"
 ```
 
-Replace `youremail@provider.com` with your actual email. **Leave the angle brackets though!**
+Replace `Kaczorkaa96@gmail.com` with your actual email. **Leave the angle brackets though!**
 
 ## Upload your public key to GitHub
 
@@ -34,10 +34,10 @@ Now, let's set a few git options **local for this repo**. Make sure you're `cd`'
 
 ```shell
 # Use your public GitHub credentials
-git config user.name "Firstname Lastname"
-git config user.email "youremail@provider.com"
+git config user.name "MartaKaczor"
+git config user.email "Kaczorkaa96@gmail.com"
 # Set up commit signing
-git config user.signingkey youremail@provider.com 
+git config user.signingkey  Kaczorkaa96@gmail.com 
 git config user.gpgsign true
 ```
 
